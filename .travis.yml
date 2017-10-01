@@ -4,7 +4,8 @@ python:
 # command to run tests
 
 install:
+  - pip install git+git://github.com/minichate/nose-memory-grinder
   - pip install -r requirements.txt
 
 script:
-  - nosetests --with-coverage --cover-package=Calculator --with-timer
+  - nosetests --with-coverage --cover-package=Calculator --with-timer --with-nose-memory-grind
