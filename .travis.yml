@@ -3,7 +3,7 @@ python:
   - "2.7"
 # command to run tests
 
-before_script:
+install:
   - pip install -r requirements.txt
 
 script:
