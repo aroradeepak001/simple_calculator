@@ -7,4 +7,4 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - nosetests --with-timer
+  - nosetests --with-coverage --cover-package=Calculator --with-timer
