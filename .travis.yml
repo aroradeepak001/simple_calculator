@@ -9,3 +9,5 @@ install:
 
 script:
   - nosetests --with-coverage --cover-package=Calculator --with-timer --with-nose-memory-grind
+  - nosetests tests/test_generator_vs_iterator.py  -v --with-timer --with-nose-memory-grind
+
