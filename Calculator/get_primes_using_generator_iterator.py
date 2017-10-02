@@ -1,13 +1,13 @@
 import math
 def get_primes_normal(input_list):
-    return (element for element in input_list if is_prime(element))
+    return [element for element in input_list if is_prime(element)]
 
 
 def get_primes_generator(input_list):
-    while True:
-        if is_prime(input_list):
-            yield input_list
-        input_list += 1
+   for number in input_list:
+        if is_prime(number):
+                yield number
+       
 
 
 def is_prime(number):
@@ -23,4 +23,3 @@ def is_prime(number):
     return False
 
 
-print(get_primes_generator(range(1000)))
